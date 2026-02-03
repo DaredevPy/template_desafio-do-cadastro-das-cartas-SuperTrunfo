@@ -7,7 +7,7 @@ int main() {
     char estado[45];
     char codigo_carta[45];
     char nome_cidade[45];
-    float populaçao;
+    long int populaçao;
     float area;
     float PIB;
     int pontos_turisticos;
@@ -18,7 +18,7 @@ int main() {
     char estado_2[45];
     char codigo_carta_2[45];
     char nome_cidade_2[45];
-    float populaçao_2;
+    long int populaçao_2;
     float area_2;
     float PIB_2;
     int pontos_turisticos_2;
@@ -40,7 +40,7 @@ int main() {
     scanf(" %s", nome_cidade);
 
     printf("População: \n");
-    scanf("%f",&populaçao);
+    scanf("%ld",&populaçao);
 
     printf("Área: \n");
     scanf("%f", &area);
@@ -64,7 +64,7 @@ int main() {
     scanf(" %s", nome_cidade_2);
 
     printf("População 2: \n");
-    scanf("%f", &populaçao_2);
+    scanf("%ld", &populaçao_2);
 
     printf("Área 2: \n");
     scanf("%f", &area_2);
@@ -82,7 +82,7 @@ int main() {
     printf("Estado: %s\n", estado);
     printf("Código da carta: %s\n", codigo_carta);
     printf("Nome da cidade: %s\n", nome_cidade);
-    printf("População: %.2f\n", populaçao);
+    printf("População: %ld\n", populaçao);
     printf("Área: %.2f\n", area);
     printf("PIB: %.2f\n", PIB);
     printf("Pontos turísticos: %d\n", pontos_turisticos);
@@ -99,7 +99,7 @@ int main() {
     printf("Estado: %s\n", estado_2);
     printf("Código da carta: %s\n", codigo_carta_2);
     printf("Nome da cidade: %s\n", nome_cidade_2);
-    printf("População: %.2f\n", populaçao_2);
+    printf("População: %ld\n", populaçao_2);
     printf("Área: %.2f\n", area_2);
     printf("PIB: %.2f\n", PIB_2);
     printf("Pontos turísticos: %d\n", pontos_turisticos_2);
