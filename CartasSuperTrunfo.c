@@ -109,5 +109,16 @@ int main() {
     printf("Densidade populacional: %.2f\n", densidade_populacional_2);
     printf("PIB per capita: %.2f\n", PIB_per_capita_2);
 
+    // Comparando todos os atributos das cartas
+
+    printf("\nComparação entre as cartas:\n");
+    printf("População: %ld \n", (populaçao > populaçao_2));
+    printf("Área: %d \n", (area > area_2));
+    printf("PIB: %d \n", (PIB > PIB_2));
+    printf("Pontos turísticos: %d\n", (pontos_turisticos > pontos_turisticos_2));
+    printf("Densidade populacional: %d\n", (int)(densidade_populacional < densidade_populacional_2));
+    printf("PIB per capita: %d\n", (int)(PIB_per_capita > PIB_per_capita_2));
+
+
     return 0;
 }
