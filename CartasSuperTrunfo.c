@@ -112,13 +112,30 @@ int main() {
     // Comparando todos os atributos das cartas
 
     printf("\nComparação entre as cartas:\n");
-    printf("População: %ld \n", (populaçao > populaçao_2));
-    printf("Área: %d \n", (area > area_2));
-    printf("PIB: %d \n", (PIB > PIB_2));
-    printf("Pontos turísticos: %d\n", (pontos_turisticos > pontos_turisticos_2));
-    printf("Densidade populacional: %d\n", (int)(densidade_populacional < densidade_populacional_2));
-    printf("PIB per capita: %d\n", (int)(PIB_per_capita > PIB_per_capita_2));
+    
+    if(populaçao > populaçao_2) {
+        printf("Carta 1 Venceu\n");
+        } else {printf("Carta 2 Venceu\n");}
 
+    if(area > area_2) {
+        printf("Carta 1 Venceu\n");
+        } else {printf("Carta 2 Venceu\n");}
+    
+    if(PIB > PIB_2) {
+        printf("Carta 1 Venceu\n");
+        } else {printf("Carta 2 Venceu\n");}
+
+    if(pontos_turisticos > pontos_turisticos_2) {
+        printf("Carta 1 Venceu\n");
+        } else {printf("Carta 2 Venceu\n");}
+    
+    if(densidade_populacional < densidade_populacional_2) {
+        printf("Carta 1 Venceu\n");
+        } else {printf("Carta 2 Venceu\n");}
+
+    if(PIB_per_capita > PIB_per_capita_2) {
+        printf("Carta 1 Venceu\n");
+        } else {printf("Carta 2 Venceu\n");}
 
     return 0;
 }
