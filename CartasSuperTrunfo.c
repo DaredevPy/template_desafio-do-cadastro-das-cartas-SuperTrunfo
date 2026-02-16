@@ -146,7 +146,7 @@ int main() {
                 } else {printf("Carta 2 Venceu\n");}
             break;
         case 5:
-            if(densidade_populacional > densidade_populacional_2) {
+            if(densidade_populacional < densidade_populacional_2) {
                 printf("Carta 1 Venceu\n");
                 } else {printf("Carta 2 Venceu\n");}
             break;
