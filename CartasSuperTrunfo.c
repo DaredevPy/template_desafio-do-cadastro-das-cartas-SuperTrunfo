@@ -128,31 +128,47 @@ int main() {
         case 1:
             if(populaçao > populaçao_2) {
                 printf("Carta 1 Venceu\n");
-                } else {printf("Carta 2 Venceu\n");}
+            } else if (populaçao == populaçao_2) {
+                printf("Empate\n");
+            } else {
+                printf("Carta 2 Venceu\n");
+            }
             break;
         case 2:
             if(area > area_2) {
                 printf("Carta 1 Venceu\n");
-                } else {printf("Carta 2 Venceu\n");}
+            } else if (area == area_2) {
+                printf("Empate\n");
+            } else {
+                printf("Carta 2 Venceu\n");
+            }
             break;
         case 3:
             if(PIB > PIB_2) {
                 printf("Carta 1 Venceu\n");
+                } else if (PIB == PIB_2) {
+                    printf("Empate\n");
                 } else {printf("Carta 2 Venceu\n");}
             break;
         case 4:
             if(pontos_turisticos > pontos_turisticos_2) {
                 printf("Carta 1 Venceu\n");
+                } else if (pontos_turisticos == pontos_turisticos_2) {
+                    printf("Empate\n");
                 } else {printf("Carta 2 Venceu\n");}
             break;
         case 5:
             if(densidade_populacional < densidade_populacional_2) {
                 printf("Carta 1 Venceu\n");
+                } else if (densidade_populacional == densidade_populacional_2) {
+                    printf("Empate\n");
                 } else {printf("Carta 2 Venceu\n");}
             break;
         case 6:
             if(PIB_per_capita > PIB_per_capita_2) {
                 printf("Carta 1 Venceu\n");
+                } else if (PIB_per_capita == PIB_per_capita_2) {
+                    printf("Empate\n");
                 } else {printf("Carta 2 Venceu\n");}
             break;
         default:
