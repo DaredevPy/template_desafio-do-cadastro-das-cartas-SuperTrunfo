@@ -31,25 +31,25 @@ int main() {
     printf("Digite os dados da carta 01:\n");
 
     printf("Estado (2 letras): \n");
-    scanf(" %s", estado);
+    scanf(" %s", &estado);
 
     printf("Código da carta (2 letras): \n");
-    scanf(" %s", codigo_carta);
+    scanf(" %s", &codigo_carta);
 
     printf("Nome da cidade: \n");
-    scanf(" %s", nome_cidade);
+    scanf(" %s", &nome_cidade);
 
     printf("População: \n");
-    scanf("%ld",&populaçao);
+    scanf(" %ld", &populaçao);
 
     printf("Área: \n");
-    scanf("%f", &area);
+    scanf(" %f", &area);
 
     printf("PIB: \n");
     scanf(" %f", &PIB);
 
     printf("Pontos turísticos: \n");
-    scanf("%d", &pontos_turisticos);
+    scanf(" %d", &pontos_turisticos);
 
     // Coletando os dados da carta 2
     printf("Digite os dados da carta 02:\n");
@@ -64,16 +64,16 @@ int main() {
     scanf(" %s", nome_cidade_2);
 
     printf("População 2: \n");
-    scanf("%ld", &populaçao_2);
+    scanf(" %ld", &populaçao_2);
 
     printf("Área 2: \n");
-    scanf("%f", &area_2);
+    scanf(" %f", &area_2);
 
     printf("PIB 2:\n ");
     scanf(" %f", &PIB_2);
 
     printf("Pontos turísticos 2: ");
-    scanf("%d", &pontos_turisticos_2);
+    scanf(" %d", &pontos_turisticos_2);
 
     // Área para exibição dos dados da cidade
 
@@ -111,31 +111,48 @@ int main() {
 
     // Comparando todos os atributos das cartas
 
+    int NumeroAtributo;
+
     printf("\nComparação entre as cartas:\n");
+    scanf("%d", &NumeroAtributo);
     
-    if(populaçao > populaçao_2) {
-        printf("Carta 1 Venceu\n");
-        } else {printf("Carta 2 Venceu\n");}
-
-    if(area > area_2) {
-        printf("Carta 1 Venceu\n");
-        } else {printf("Carta 2 Venceu\n");}
+     switch(NumeroAtributo) {
+        case 1:
+            if(populaçao > populaçao_2) {
+                printf("Carta 1 Venceu\n");
+                } else {printf("Carta 2 Venceu\n");}
+            break;
+        case 2:
+            if(area > area_2) {
+                printf("Carta 1 Venceu\n");
+                } else {printf("Carta 2 Venceu\n");}
+            break;
+        case 3:
+            if(PIB > PIB_2) {
+                printf("Carta 1 Venceu\n");
+                } else {printf("Carta 2 Venceu\n");}
+            break;
+        case 4:
+            if(pontos_turisticos > pontos_turisticos_2) {
+                printf("Carta 1 Venceu\n");
+                } else {printf("Carta 2 Venceu\n");}
+            break;
+        case 5:
+            if(densidade_populacional > densidade_populacional_2) {
+                printf("Carta 1 Venceu\n");
+                } else {printf("Carta 2 Venceu\n");}
+            break;
+        case 6:
+            if(PIB_per_capita > PIB_per_capita_2) {
+                printf("Carta 1 Venceu\n");
+                } else {printf("Carta 2 Venceu\n");}
+            break;
+        default:
+            printf("Opção inválida\n");
+    }
     
-    if(PIB > PIB_2) {
-        printf("Carta 1 Venceu\n");
-        } else {printf("Carta 2 Venceu\n");}
 
-    if(pontos_turisticos > pontos_turisticos_2) {
-        printf("Carta 1 Venceu\n");
-        } else {printf("Carta 2 Venceu\n");}
-    
-    if(densidade_populacional < densidade_populacional_2) {
-        printf("Carta 1 Venceu\n");
-        } else {printf("Carta 2 Venceu\n");}
-
-    if(PIB_per_capita > PIB_per_capita_2) {
-        printf("Carta 1 Venceu\n");
-        } else {printf("Carta 2 Venceu\n");}
+ 
 
     return 0;
 }
