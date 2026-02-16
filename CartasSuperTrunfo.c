@@ -114,6 +114,14 @@ int main() {
     int NumeroAtributo;
 
     printf("\nComparação entre as cartas:\n");
+
+    printf("Escolha o número do atributo para comparar:\n");
+    printf("1 - População\n");
+    printf("2 - Área\n");
+    printf("3 - PIB\n");
+    printf("4 - Pontos turísticos\n");
+    printf("5 - Densidade populacional\n");
+    printf("6 - PIB per capita\n");
     scanf("%d", &NumeroAtributo);
     
      switch(NumeroAtributo) {
